@@ -29,7 +29,7 @@ const chars = [
     "=",
 ];
 
-const ButtonCols = () => {
+const Buttons = () => {
     return (
         <div id="ButtonCols">
             {chars.map((char, i) => (
@@ -39,4 +39,4 @@ const ButtonCols = () => {
     );
 };
 
-export default ButtonCols;
+export default Buttons;
