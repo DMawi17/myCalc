@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fira code;
+}
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #fff;
+
+    #Frame {
+        width: 350px;
+        height: 500px;
+        background-color: #5c799d;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 10% 10% 0% auto;
+        }
+    }
+
+    #Display {
+        width: 85%;
+        height: 17.5%;
+        background-color: #dfebfd;
+        border-radius: 5px;
+        margin: 10% auto 0;
+        color: #d3d3d3;
+        padding: 35px 90px 0px 0px;
+        font-size: 20px;
+    }
+
+    #ButtonCols {
+        // outline: 2px solid red;
+        width: 85%;
+        height: 55%;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2px;
+
+        #Button {
+            width: 56px;
+            height: 42px;
+            background-color: #83abdc;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgb(88, 85, 85);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+
+            &:nth-child(5n) {
+                background-color: #f3ac00;
+            }
+
+            &:last-of-type {
+                background-color: #f3ac00;
+                width: 97%;
+                align-self: auto;
+            }
+        }
+    }
+}
